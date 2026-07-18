@@ -16,7 +16,7 @@ I'm an AI/ML Engineer at Spurring Ventures, Bengaluru, working on production com
 ## Tech Stack
 
 - HTML5, CSS3, vanilla JavaScript
-- Deployed via Netlify / GitHub Pages
+- Deployed via GitHub Pages
 
 ## Local Setup
 
