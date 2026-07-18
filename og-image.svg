@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+    <title id="title">Yaswanth Reddy portfolio preview</title>
+    <desc id="desc">AI/ML Engineer specializing in production computer vision and backend AI systems.</desc>
+    <rect width="1200" height="630" fill="#f3efe6"/>
+    <path d="M0 0h1200v630H0z" fill="none"/>
+    <g stroke="#d8cdbb" stroke-width="1">
+        <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200"/>
+        <path d="M80 0v630M160 0v630M240 0v630M320 0v630M400 0v630M480 0v630M560 0v630M640 0v630M720 0v630M800 0v630M880 0v630M960 0v630M1040 0v630M1120 0v630"/>
+    </g>
+    <rect x="72" y="72" width="1056" height="486" fill="#fffaf0" stroke="#1f272d" stroke-width="4"/>
+    <rect x="92" y="92" width="96" height="96" fill="#d39b2a" stroke="#1f272d" stroke-width="4"/>
+    <text x="140" y="148" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" fill="#1f272d">YR</text>
+    <text x="92" y="260" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900" fill="#1f272d">Yaswanth Reddy</text>
+    <text x="92" y="330" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#1f6872">AI/ML Engineer</text>
+    <text x="92" y="404" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#59636b">Production computer vision and backend AI systems</text>
+    <text x="92" y="476" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#b44b2f">YOLO11 · FastAPI · ONNX · Docker · MLflow</text>
+</svg>

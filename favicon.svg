@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <rect width="64" height="64" fill="#d39b2a"/>
+    <rect x="5" y="5" width="54" height="54" fill="none" stroke="#1f272d" stroke-width="4"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#1f272d">YR</text>
+</svg>

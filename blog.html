@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest Medium posts by Yaswanth Reddy on AI engineering, computer vision, backend AI systems, and practical ML projects.">
+    <meta name="author" content="Yaswanth Reddy">
+    <meta name="theme-color" content="#f3efe6">
+    <meta property="og:title" content="Blog | Yaswanth Reddy">
+    <meta property="og:description" content="Medium posts and engineering notes by Yaswanth Reddy.">
+    <meta property="og:image" content="og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="og-image.svg">
+    <title>Blog | Yaswanth Reddy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="port.css">
+    <style>
+        .blog-main {
+            width: var(--container);
+            margin: 0 auto;
+            padding: 58px 0 86px;
+        }
+
+        .blog-hero {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 34px;
+        }
+
+        .blog-hero-copy {
+            display: grid;
+            gap: 14px;
+        }
+
+        .blog-hero h1 {
+            max-width: 760px;
+            font-size: 4.4rem;
+        }
+
+        .blog-hero p:not(.section-label),
+        .post-snippet,
+        .post-date {
+            color: var(--muted);
+        }
+
+        .blog-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 28px 0 22px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            padding: 14px 0;
+        }
+
+        .blog-status p {
+            color: var(--muted);
+            font-weight: 800;
+        }
+
+        .blog-status button {
+            padding: 8px 12px;
+            border: 1px solid var(--ink);
+            background: var(--panel);
+            color: var(--ink);
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 var(--line);
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 18px;
+        }
+
+        .post {
+            min-height: 100%;
+        }
+
+        .post-card {
+            display: flex;
+            height: 100%;
+            min-height: 430px;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            color: var(--ink);
+            box-shadow: none;
+            transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+        }
+
+        .post-card:hover,
+        .post-card:focus-visible {
+            border-color: var(--ink);
+            background: var(--panel);
+            box-shadow: 7px 7px 0 var(--orange);
+            transform: translate(-2px, -2px);
+        }
+
+        .post-image,
+        .post-image-fallback {
+            width: 100%;
+            height: 210px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .post-image {
+            object-fit: cover;
+            filter: saturate(0.9) contrast(1.02);
+        }
+
+        .post-image-fallback {
+            display: grid;
+            place-items: center;
+            background:
+                linear-gradient(90deg, rgba(31, 104, 114, 0.16) 1px, transparent 1px),
+                linear-gradient(rgba(31, 104, 114, 0.16) 1px, transparent 1px),
+                var(--paper-2);
+            background-size: 28px 28px;
+            color: var(--orange);
+            font-size: 2.4rem;
+            font-weight: 900;
+        }
+
+        .post-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: 12px;
+            padding: 18px;
+        }
+
+        .post-title {
+            color: var(--ink);
+            font-size: 1.32rem;
+            line-height: 1.2;
+        }
+
+        .post-snippet {
+            font-size: 0.98rem;
+        }
+
+        .post-date {
+            margin-top: auto;
+            padding-top: 14px;
+            border-top: 1px solid var(--line);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 0.82rem;
+            font-weight: 800;
+        }
+
+        @media (max-width: 880px) {
+            .blog-hero h1 {
+                font-size: 3.4rem;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .blog-main {
+                padding-top: 38px;
+            }
+
+            .blog-hero h1 {
+                font-size: 2.55rem;
+            }
+
+            .blog-status {
+                display: grid;
+            }
+
+            .blog-posts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script defer src="port.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">YR</span>
+                <span>
+                    <strong>Yaswanth Reddy</strong>
+                    <small>Blog</small>
+                </span>
+            </a>
+
+            <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+                <span data-menu-label>Menu</span>
+            </button>
+
+            <div class="nav-links" id="site-menu" data-nav-menu>
+                <a href="index.html">Portfolio</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://medium.com/@yaswanthreddy3775" target="_blank" rel="noopener noreferrer">Medium</a>
+            </div>
+
+            <button class="theme-button" type="button" data-theme-toggle aria-label="Toggle light and dark theme">Theme</button>
+        </nav>
+    </header>
+
+    <main id="main" class="blog-main">
+        <section class="blog-hero">
+            <div class="blog-hero-copy" data-reveal>
+                <p class="section-label">Blog</p>
+                <h1>Latest notes from my AI engineering work.</h1>
+            </div>
+        </section>
+
+        <section class="blog-status" aria-live="polite">
+            <p id="blogStatus">Loading latest posts...</p>
+            <button type="button" id="blogRetry" hidden>Try again</button>
+        </section>
+
+        <section class="blog-posts" id="blogPosts" aria-live="polite" aria-busy="true"></section>
+    </main>
+</body>
+</html>
