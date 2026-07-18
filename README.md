@@ -17,13 +17,3 @@ I'm an AI/ML Engineer at Spurring Ventures, Bengaluru, working on production com
 
 - HTML5, CSS3, vanilla JavaScript
 - Deployed via GitHub Pages
-
-## Local Setup
-
-Clone the repo and open `index.html` in a browser — no build step required.
-
-\`\`\`bash
-git clone https://github.com/yaswanthreddy3/portfolio.git
-cd portfolio
-open index.html
-\`\`\`
